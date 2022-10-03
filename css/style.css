@@ -1,0 +1,290 @@
+/* reset whole */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* page setting */
+html, body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+a{
+    color:#333; /* avoid blue links on the page*/
+    text-decoration: none; /* avoid underline */
+}
+h1, h2, h3{
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px 0; /* margin vertical, margin horizontal */
+}
+img {
+    object-fit: cover;
+    object-position: center;
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+textarea {
+    width: 100%;
+    display: block;
+}
+.clr{
+    clear: both;
+}
+
+/* specific settings */
+.primary-text {
+    color:#f7c08a;
+}
+.bg-black {
+    background-color: #444;
+    color: #fff;
+}
+.img-info {
+    width: 50%;
+    height: 100%;
+}
+.img-mask {
+    border-radius: 50%;
+}
+.description {
+    width: 50%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+.container{
+    margin: 0%, auto; /* center horizontally */
+    overflow: hidden;
+    padding: 0%, 20px;
+}
+#nav-bar{
+    background-color: #333;
+    color: #fff; /* covered by a{} */
+    overflow: auto;
+}
+#nav-bar a{
+    color: #fff;
+}
+#nav-bar h1{
+    float: left;
+    padding: 0%;
+}
+#nav-bar h1 a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#nav-bar ul{
+    float: right;
+    list-style: none; /* delete the dot before item */
+}
+#nav-bar li{
+    float: left;
+}
+#nav-bar li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#nav-bar a:hover, #nav-bar a.current {
+    background-color: #444;
+    color: #f7c08a;
+}
+
+#showcase {
+    background: url(../images/header.jpeg) no-repeat center center/cover;
+    height: 95vh;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;/*ensure no overlapping among lines*/
+}
+#showcase .showcase-content p {
+    font-size: 20px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+
+.btn{ /*a as button*/
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    padding: 13px 20px;
+    margin-top: 20px;
+}
+.btn:hover {
+    background-color: #444;
+    color: #f7c08a;
+}
+@keyframes arrowsDown {
+    0% {padding-top: 25vh;}
+    100% {padding-top: 30vh;}
+}
+.arrows {
+    text-align: center;
+    padding-top: 25vh;
+}
+.arrows .material-icons {
+    font-size: 50px;
+    margin: 0 auto;
+    display: block;
+    line-height: 0.3;
+}
+.arrowsActive {
+    animation-name: arrowsDown;
+    animation-duration: 1s; /*time lasting*/
+    animation-iteration-count: 3;
+}
+
+#home-info .container{
+    /* height: 600px; */
+    width: 100%;
+}
+
+.container:nth-child(odd) .description  {
+    float: left;
+}
+.container:nth-child(even) .description  {
+    float: right;
+}
+
+#home-info .description p {
+    padding-bottom: 30px;
+}
+
+#features {
+    width: 100%;
+    height: 300px;
+}
+#features .box:nth-child(even) {
+    background-color: #f7c08a;
+}
+#features .box:nth-child(odd) {
+    background-color: #fff;
+}
+#features .box{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.2s;
+    
+}
+#features .box:hover{
+    transform: scale(120%);
+    box-shadow:10px 5px 5px #333;
+}
+#features .box i {
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+#tail {
+    text-align: center;
+    height: 80px;
+}
+#tail p{
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+
+/* about.html */
+#about-info {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#about-info .description {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+#about-info .img-block {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+#about-info img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+#comments {
+    background: url(../images/comments.jpeg) no-repeat center center/cover;
+    height: 800px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 50px;
+}
+#comments h1 {
+    padding-top: 100px;
+}
+.comment-box {
+    max-width: 800px;
+    height: 200px;
+    overflow:scroll;
+    display: block;
+    border: 1px solid #eee;
+    margin: 30px auto;
+    background-color: #f7c08a;
+    
+}
+.comment-box img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 25px;
+}
+.comment-box p {
+    float: left;
+    width: 50%;
+    margin: 25px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 18px;
+}
+
+#contact-info {
+    max-width: 800px;
+    margin: 10px auto;
+}
+#contact-tail .container {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 200px;
+}
+#contact-tail .box {
+    text-align: center;
+    float: left;
+    width: 33.3%;
+    margin-top: 50px;
+}
+#contact-tail .box i {
+    font-size: 40px;
+}
+#contact-tail .box h3 {
+    line-height: 0;
+}
+#contact-tail .box:hover {
+    color: #f7c08a;
+}

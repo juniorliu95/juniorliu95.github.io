@@ -1,1 +1,91 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width:device-width;initial-scale=1.0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to my homepage!">
+    <meta name="keywords" content="frontend, homepage"> <!--for search engine-->
+
+    <title>Junior | Home</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2409/2409387.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS for mobie devices -->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+    <!-- google fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- javascript -->
+    <script src="js/html.js"></script>
+
+</head>
+<body  onload=fadeIn()>
+    <header>
+        <nav id="nav-bar">
+            <div class="container">
+                <h1><a href="index.html">Junior</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1>Welcome to <span class="primary-text">My Home Page</span></h1>
+                    <p>I am a researcher and a frontend engineer</p>
+                    <a class="btn" href="about.html">About me</a>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <i class="material-icons">expand_more</i>
+                <i class="material-icons">expand_more</i>
+                <i class="material-icons">expand_more</i>
+            </div>
+        </div>
+    </header>
+    
+    <section id="home-info" class="bg-black">
+        <div class="container">
+            <img src="./images/cloud.jpeg" alt="Cloud" decoding="async" class="img-info"></img>
+            <div class="description">
+                <h2>My <span class="primary-text">Cloud</span></h2>
+                <p>This is the cloud of Kyoto. We can see it in the summer, which is the hottest but most Japanized period. </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="./images/gion.jpeg" alt="gion" decoding="async" class="img-info"></img>
+            <div class="description">
+                <h2>My <span class="primary-text">Gion</span></h2>
+                <p>This is the light tower of Gion Festival. In 2022, it was held after two years absent due to Covid-19.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="box">
+            <i class="material-icons">school</i>
+            <h3>Education</h3>
+            <p>Check my acdemic experience.</p>
+        </div>
+        <div class="box">
+            <i class="material-icons">work</i>
+            <h3>Working</h3>
+            <p>Check my working experience.</p>
+        </div>
+        <div class="box">
+            <i class="material-icons">book</i>
+            <h3>Papers</h3>
+            <p>Check my papers.</p>
+        </div>
+    </section>
+
+    <section id="tail" class="bg-black">
+        <p>Home page of JUNYU, 2022</p>
+    </section>
+</body>
+</html>
