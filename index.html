@@ -1,91 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width:device-width;initial-scale=1.0;">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Welcome to my homepage!">
-    <meta name="keywords" content="frontend, homepage"> <!--for search engine-->
-
-    <title>Junior | Home</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2409/2409387.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- CSS for mobie devices -->
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
-    <!-- google fonts and icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <!-- javascript -->
-    <script src="js/html.js"></script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junyu Liu, AI Engineer &amp; Researcher</title>
+<meta name="description" content="Junyu Liu is an Algorithm Engineer at SAP in Tokyo, building computer-using agents, and a researcher in medical large language models: safety and capability benchmarks for Japanese medical AI, and LLM agents for public-health communication.">
+<meta name="author" content="Junyu Liu">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Junyu Liu, AI Engineer &amp; Researcher">
+<meta property="og:description" content="Algorithm Engineer at SAP, Tokyo. Computer-using agents, and evaluation of medical LLMs in Japanese.">
+<meta property="og:url" content="https://juniorliu95.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://juniorliu95.github.io/">
+<link rel="stylesheet" href="style.css">
 </head>
-<body  onload=fadeIn()>
-    <header>
-        <nav id="nav-bar">
-            <div class="container">
-                <h1><a href="index.html">Junior</a></h1>
-                <ul>
-                    <li><a class="current" href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="showcase">
-            <div class="container">
-                <div class="showcase-content">
-                    <h1>Welcome to <span class="primary-text">My Home Page</span></h1>
-                    <p>I am a researcher and a frontend engineer</p>
-                    <a class="btn" href="about.html">About me</a>
-                </div>
-            </div>
+<body>
 
-            <div class="arrows">
-                <i class="material-icons">expand_more</i>
-                <i class="material-icons">expand_more</i>
-                <i class="material-icons">expand_more</i>
-            </div>
-        </div>
-    </header>
-    
-    <section id="home-info" class="bg-black">
-        <div class="container">
-            <img src="./images/cloud.jpeg" alt="Cloud" decoding="async" class="img-info"></img>
-            <div class="description">
-                <h2>My <span class="primary-text">Cloud</span></h2>
-                <p>This is the cloud of Kyoto. We can see it in the summer, which is the hottest but most Japanized period. </p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-        </div>
-        <div class="container">
-            <img src="./images/gion.jpeg" alt="gion" decoding="async" class="img-info"></img>
-            <div class="description">
-                <h2>My <span class="primary-text">Gion</span></h2>
-                <p>This is the light tower of Gion Festival. In 2022, it was held after two years absent due to Covid-19.</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-        </div>
-    </section>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <section id="features">
-        <div class="box">
-            <i class="material-icons">school</i>
-            <h3>Education</h3>
-            <p>Check my acdemic experience.</p>
-        </div>
-        <div class="box">
-            <i class="material-icons">work</i>
-            <h3>Working</h3>
-            <p>Check my working experience.</p>
-        </div>
-        <div class="box">
-            <i class="material-icons">book</i>
-            <h3>Papers</h3>
-            <p>Check my papers.</p>
-        </div>
-    </section>
+<nav id="nav" aria-label="Section navigation">
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">Junyu Liu</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <section id="tail" class="bg-black">
-        <p>Home page of JUNYU, 2022</p>
-    </section>
+<main id="main">
+  <header id="top" class="masthead">
+    <div class="masthead-grid">
+      <div>
+        <h1>Junyu Liu</h1>
+        <p class="role">Algorithm Engineer <span class="org">· SAP, Tokyo</span></p>
+        <p class="tagline"><b>Applied AI and medical LLMs</b>: computer-using agents for the enterprise, and benchmarks that test whether language models are safe and capable in Japanese clinical settings.</p>
+      </div>
+      <div class="portrait" role="img" aria-label="Monogram JL">JL</div>
+    </div>
+
+    <ul class="contact" aria-label="Profiles">
+      <li><a href="mailto:juniorliu95@gmail.com">Email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=JtCyNr8AAAAJ" rel="noopener">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/junyu-liu-917904105/" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/juniorliu95" rel="noopener">GitHub</a></li>
+      <li><a href="assets/Junyu_Liu_CV.pdf">CV (PDF)</a></li>
+    </ul>
+  </header>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p>I am an Algorithm Engineer at SAP, where I build WalkMe's next-generation computer-using agent with the
+    R&amp;D team in Tel Aviv and help group companies in Japan move from traditional machine learning to LLM-based
+    systems. Before SAP, I spent three years as a Customer Engineer at Scale AI, leading proofs of concept and
+    enterprise deployments for customers in Japan, and worked as an AI researcher at Toshiba.</p>
+    <p>My research asks how far large language models can be trusted in medicine, particularly in Japanese. I build
+    benchmarks for safety and clinical knowledge (<a href="https://arxiv.org/abs/2601.01627">JMedEthicBench</a>, <a href="https://arxiv.org/abs/2605.22080">JMed48k</a>,
+    <a href="https://doi.org/10.1007/978-3-032-06004-4_30">KokushiMD-10</a>) and LLM agents for public-health communication. My doctoral work was in Medical Informatics at
+    Kyoto University, after electrical-engineering degrees from Harbin Institute of Technology, where I started out
+    in computer vision.</p>
+  </section>
+
+  <section id="news" aria-labelledby="news-h">
+    <h2 id="news-h">News</h2>
+    <ul class="news">
+      <li><time datetime="2026-10">Oct 2026</time>
+        <span><span class="tag">Event</span>Attended <b>COLM 2026</b>, where JMedEthicBench was presented.</span></li>
+      <li><time datetime="2026-09">Sep 2026</time>
+        <span><span class="tag">Paper</span><a href="https://arxiv.org/abs/2605.22080">JMed48k</a> accepted to the <b>NeurIPS 2026</b> Evaluations &amp; Datasets Track.</span></li>
+      <li><time datetime="2026-07">Jul 2026</time>
+        <span><span class="tag">Paper</span><a href="https://arxiv.org/abs/2601.01627">JMedEthicBench</a> accepted to <b>COLM 2026</b>.</span></li>
+      <li><time datetime="2026-05">May 2026</time>
+        <span><span class="tag">Paper</span>Our Japanese-language AI agent for HPV-vaccine infoveillance is published in <a href="https://doi.org/10.2196/90295"><i>JMIR Infodemiology</i></a>.</span></li>
+      <li><time datetime="2025-10">Oct 2025</time>
+        <span><span class="tag">Career</span>Joined <b>SAP</b> as an Algorithm Engineer, working on computer-using agents.</span></li>
+      <li><time datetime="2025-09">Sep 2025</time>
+        <span><span class="tag">Paper</span><a href="https://doi.org/10.1007/978-3-032-06004-4_30">KokushiMD-10</a> presented at the Agentic AI for Medicine workshop, <b>MICCAI 2025</b>.</span></li>
+      <li><time datetime="2025-02">Feb 2025</time>
+        <span><span class="tag">Paper</span>HPV-vaccine hesitancy study published in the <a href="https://doi.org/10.2196/68881"><i>Journal of Medical Internet Research</i></a>.</span></li>
+    </ul>
+  </section>
+
+  <section id="publications" aria-labelledby="pubs-h">
+    <h2 id="pubs-h">Selected Publications</h2>
+    <p class="pub-note">Full list on <a href="https://scholar.google.com/citations?user=JtCyNr8AAAAJ" rel="noopener">Google Scholar</a>.</p>
+
+    <h3 class="sub">Medical LLMs and agents</h3>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2605.22080">JMed48k: A Multi-Profession Japanese Medical Licensing Benchmark for Vision-Language Model Evaluation</a></div>
+        <div class="pub-authors">Xun Y, <span class="me">Liu J</span>, Niu Q, Wang X, Yuan Z, Li Z, Zhang Z, Zhao B, Wang S, Li I, Hatakeyama-Sato K, Iwasawa Y, Matsuo Y</div>
+        <div class="pub-venue"><span class="venue">NeurIPS 2026</span> Evaluations &amp; Datasets Track · <a href="https://arxiv.org/abs/2605.22080">arXiv</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2601.01627">JMedEthicBench: A Multi-Turn Conversational Benchmark for Evaluating Medical Safety in Japanese Large Language Models</a></div>
+        <div class="pub-authors"><span class="me">Liu J</span>, Li Z, Niu Q, Zhang Z, Xun Y, Hou W, Wang S, Iwasawa Y, Matsuo Y, Hatakeyama-Sato K</div>
+        <div class="pub-venue"><span class="venue">COLM 2026</span> <a href="https://arxiv.org/abs/2601.01627">arXiv</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.2196/90295">Japanese-Language AI Agent System for Human Papillomavirus Vaccine Infoveillance and Public Communication: Development and Feasibility Evaluation</a></div>
+        <div class="pub-authors"><span class="me">Liu J</span>, Yang S, Ma D, Niu Q, Zhang Z, Nagai-Tanima M, Aoyama T</div>
+        <div class="pub-venue"><span class="venue">JMIR Infodemiology</span> 2026;6:e90295 · <a href="https://doi.org/10.2196/90295">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1007/978-3-032-06004-4_30">KokushiMD-10: Benchmark for Evaluating Large Language Models on Ten Japanese National Healthcare Licensing Examinations</a></div>
+        <div class="pub-authors"><span class="me">Liu J</span>, Yan LKQ, Wang T, Niu Q, Nagai-Tanima M, Aoyama T</div>
+        <div class="pub-venue"><span class="venue">MICCAI 2025 Workshop</span> Agentic AI for Medicine · <a href="https://doi.org/10.1007/978-3-032-06004-4_30">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1002/med4.70085">Large Language Model Benchmarks in Medical Tasks</a></div>
+        <div class="pub-authors">Yan LKQ, Niu Q, Li M, Zhang Y, Yin CH, Fei C, Peng B, Bi Z, Feng P, Chen K, Wang T, Wang Y, Chen S, Liu M, <span class="me">Liu J</span>, Song X, Bao R, Jiang Z, Qin Z</div>
+        <div class="pub-venue"><span class="venue">Medicine Advances</span> 2026 · <a href="https://doi.org/10.1002/med4.70085">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2409.02387">Large Language Models and Cognitive Science: A Comprehensive Review of Similarities, Differences, and Challenges</a></div>
+        <div class="pub-authors">Niu Q, <span class="me">Liu J</span>, Bi Z, Feng P, Peng B, Chen K, Li M, Yan LKQ, Zhang Y, et al.</div>
+        <div class="pub-venue"><span class="venue">arXiv</span> 2409.02387, 2024 · <a href="https://arxiv.org/abs/2409.02387">arXiv</a></div>
+      </li>
+    </ol>
+
+    <h3 class="sub">Infodemiology</h3>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.2196/68881">Understanding Human Papillomavirus Vaccination Hesitancy in Japan Using Social Media: Content Analysis</a></div>
+        <div class="pub-authors"><span class="me">Liu J</span>, Niu Q, Nagai-Tanima M, Aoyama T</div>
+        <div class="pub-venue"><span class="venue">J Med Internet Res</span> 2025;27:e68881 · <a href="https://doi.org/10.2196/68881">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.2196/37466">The Effect of Fear of Infection and Sufficient Vaccine Reservation Information on Rapid COVID-19 Vaccination in Japan: Evidence From a Retrospective Twitter Analysis</a></div>
+        <div class="pub-authors">Niu Q, <span class="me">Liu J</span>, Kato M, Nagai-Tanima M, Aoyama T</div>
+        <div class="pub-venue"><span class="venue">J Med Internet Res</span> 2022;24(6):e37466 · <a href="https://doi.org/10.2196/37466">DOI</a> · <a href="https://github.com/juniorliu95/COVID_fear">Code</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.2196/32335">Public Opinion and Sentiment Before and at the Beginning of COVID-19 Vaccinations in Japan: Twitter Analysis</a></div>
+        <div class="pub-authors">Niu Q, <span class="me">Liu J</span>, Kato M, Shinohara Y, Matsumura N, Aoyama T, Nagai-Tanima M</div>
+        <div class="pub-venue"><span class="venue">JMIR Infodemiology</span> 2022;2(1):e32335 · <a href="https://doi.org/10.2196/32335">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1186/s12879-022-07790-9">Explanation of Hand, Foot, and Mouth Disease Cases in Japan Using Google Trends Before and During the COVID-19: Infodemiology Study</a></div>
+        <div class="pub-authors">Niu Q, <span class="me">Liu J</span>, Zhao Z, Onishi M, Kawaguchi A, Bandara A, Harada K, Aoyama T, Nagai-Tanima M</div>
+        <div class="pub-venue"><span class="venue">BMC Infect Dis</span> 2022;22(1):806 · <a href="https://doi.org/10.1186/s12879-022-07790-9">DOI</a></div>
+      </li>
+    </ol>
+
+    <h3 class="sub">Computer vision</h3>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1007/978-3-030-61616-8_13">Prediction Stability as a Criterion in Active Learning</a></div>
+        <div class="pub-authors"><span class="me">Liu J</span>, Li X, Zhou J, Shen J</div>
+        <div class="pub-venue"><span class="venue">ICANN 2020</span> <a href="https://doi.org/10.1007/978-3-030-61616-8_13">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1007/978-3-030-01421-6_16">An Original Neural Network for Pulmonary Tuberculosis Diagnosis in Radiographs</a></div>
+        <div class="pub-authors"><span class="me">Liu J</span>, Liu Y, Wang C, Li A, Meng B, Chai X, Zuo P</div>
+        <div class="pub-venue"><span class="venue">ICANN 2018</span> <a href="https://doi.org/10.1007/978-3-030-01421-6_16">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1080/01431161.2021.1995071">Dual-Det: A Fast Detector for Oriented Object Detection in Aerial Images</a></div>
+        <div class="pub-authors">Guan Q, Qu Z, Zhao P, Zeng M, <span class="me">Liu J</span></div>
+        <div class="pub-venue"><span class="venue">Int J Remote Sens</span> 2021;42(24) · <a href="https://doi.org/10.1080/01431161.2021.1995071">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1145/3297156.3297190">PartsNet: A Unified Deep Network for Automotive Engine Precision Parts Defect Detection</a></div>
+        <div class="pub-authors">Qu Z, Shen J, Li R, <span class="me">Liu J</span>, Guan Q</div>
+        <div class="pub-venue"><span class="venue">CSAI 2018</span> <a href="https://doi.org/10.1145/3297156.3297190">DOI</a></div>
+      </li>
+      <li class="pub">
+        <div class="pub-title"><a href="https://doi.org/10.1007/978-3-030-01424-7_43">OrieNet: A Regression System for Latent Fingerprint Orientation Field Extraction</a></div>
+        <div class="pub-authors">Qu Z, <span class="me">Liu J</span>, Liu Y, Guan Q, Yang C, Zhang Y</div>
+        <div class="pub-venue"><span class="venue">ICANN 2018</span> <a href="https://doi.org/10.1007/978-3-030-01424-7_43">DOI</a> · <a href="https://github.com/juniorliu95/OrieNet">Code</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <ul class="timeline">
+      <li>
+        <span class="dates">2025 – present</span>
+        <div>
+          <h3>Algorithm Engineer <span class="org">· SAP, Tokyo</span></h3>
+          <ul>
+            <li>Build WalkMe's next-generation computer-using agent with the Tel Aviv R&amp;D team.</li>
+            <li>Develop an internal recursive self-improvement agent system for rapid iteration on a key product.</li>
+            <li>Adapt and deploy solutions across group companies with the Japan solution team, from traditional ML to LLM-based systems.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="dates">2022 – 2025</span>
+        <div>
+          <h3>Customer Engineer <span class="org">· Scale AI, Tokyo</span></h3>
+          <ul>
+            <li>Led proofs of concept and enterprise deployments that helped secure two key clients in Japan.</li>
+            <li>Owned technical relationships with major enterprise customers across time zones.</li>
+            <li>Managed a Japanese annotator team for frontier-LLM localization.</li>
+            <li>Built internal tooling and customer products, and turned Japanese enterprise requirements into roadmap input.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="dates">2022 – 2023</span>
+        <div>
+          <h3>AI Researcher <span class="org">· Toshiba, Kanagawa</span></h3>
+          <ul>
+            <li>Applied data-driven methods to manufacturing and infrastructure problems.</li>
+            <li>Developed and tuned state-of-the-art models for consigned projects, and built internal research tools.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="dates">2019</span>
+        <div>
+          <h3>Algorithm Engineer <span class="org">· Hikvision, Hangzhou</span></h3>
+          <ul>
+            <li>Proposed an active-learning criterion based on prediction stability (ICANN 2020).</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="dates">2018</span>
+        <div>
+          <h3>Algorithm Engineer <span class="org">· HY Medical Technology, Beijing</span></h3>
+          <ul>
+            <li>Developed tuberculosis-detection models for an automated medical-examination platform (ICANN 2018).</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="education" aria-labelledby="edu-h">
+    <h2 id="edu-h">Education</h2>
+    <ul class="timeline">
+      <li>
+        <span class="dates">2019 – 2026</span>
+        <div>
+          <h3>PhD, Medical Informatics <span class="org">· Kyoto University</span></h3>
+          <p class="note">Medical LLM evaluation, LLM agents, and infodemiology.</p>
+        </div>
+      </li>
+      <li>
+        <span class="dates">2017 – 2019</span>
+        <div><h3>MEng, Electrical Engineering <span class="org">· Harbin Institute of Technology</span></h3></div>
+      </li>
+      <li>
+        <span class="dates">2013 – 2017</span>
+        <div><h3>BEng, Electrical Engineering <span class="org">· Harbin Institute of Technology</span></h3></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills &amp; Certifications</h2>
+    <dl class="facts">
+      <dt>AI / ML</dt>
+      <dd>LLM and agent development, evaluation and benchmarking, PyTorch, TensorFlow, LangChain</dd>
+      <dt>Engineering</dt>
+      <dd>Python, TypeScript, C++ · React, Node.js · PostgreSQL, MySQL, MongoDB · Pandas, NumPy</dd>
+      <dt>Languages</dt>
+      <dd>Chinese (native) · Japanese (JLPT N1, fluent) · English (fluent)</dd>
+      <dt>Certifications</dt>
+      <dd>Kaggle Bronze Medal · AWS Certified Cloud Practitioner · IPA Information Security Management ·
+        IPA Fundamental Information Technology Engineer · Google Data Analytics Professional Certificate</dd>
+    </dl>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Junyu Liu · Tokyo, Japan · Hosted on GitHub Pages.</p>
+</footer>
+
+<script>
+  // Underline the nav link for the section in view.
+  (function () {
+    var links = document.querySelectorAll('.nav-links a');
+    if (!('IntersectionObserver' in window) || !links.length) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) { a.classList.remove('current'); });
+        var a = byId[e.target.id];
+        if (a) {
+          a.classList.add('current');
+          // On narrow screens the link row scrolls sideways; keep the current link visible.
+          var bar = a.closest('.nav-links');
+          var li = a.parentNode;
+          if (bar.scrollWidth > bar.clientWidth) {
+            bar.scrollLeft = li.offsetLeft - (bar.clientWidth - li.offsetWidth) / 2;
+          }
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(function (s) { io.observe(s); });
+  })();
+</script>
 </body>
 </html>

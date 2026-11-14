@@ -1,0 +1,246 @@
+/* Junyu Liu, personal site
+   One reading column, serif body, sans labels, hairline rules.
+   Accent matches the CV's blue (#304263). */
+
+:root {
+  --bg:          #fcfcfb;
+  --bg-subtle:   #f3f4f6;
+  --text:        #1b1d21;
+  --text-muted:  #565b65;
+  --text-faint:  #6b707a;
+  --accent:      #304263;
+  --accent-soft: #e6ebf2;
+  --rule:        #e3e5e9;
+  --rule-strong: #c8ccd3;
+
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+  --sans:  ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Helvetica, Arial, sans-serif;
+
+  --measure: 46rem;
+  --gutter: clamp(1rem, 5vw, 2.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:          #15171b;
+    --bg-subtle:   #1d2026;
+    --text:        #e7e8ea;
+    --text-muted:  #a9adb5;
+    --text-faint:  #8d929b;
+    --accent:      #a4bde0;
+    --accent-soft: #232d3c;
+    --rule:        #2a2e35;
+    --rule-strong: #3b4049;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.skip-link { position: absolute; left: -9999px; top: 0; background: var(--bg); padding: .6rem 1rem; z-index: 100; }
+.skip-link:focus { left: .5rem; top: .5rem; }
+
+/* ---------- navigation ---------- */
+
+#nav {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.nav-inner {
+  max-width: var(--measure); margin: 0 auto;
+  padding: .7rem var(--gutter);
+  display: flex; align-items: baseline; gap: 1.5rem;
+}
+.nav-name {
+  font-family: var(--sans); font-size: .85rem; font-weight: 650;
+  color: var(--text); text-decoration: none; white-space: nowrap;
+}
+.nav-links {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; gap: 1.1rem; flex: 1; justify-content: flex-end;
+  overflow-x: auto; scrollbar-width: none;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a {
+  font-family: var(--sans); font-size: .78rem; letter-spacing: .02em;
+  color: var(--text-muted); text-decoration: none; white-space: nowrap;
+  padding-bottom: 2px; border-bottom: 1.5px solid transparent;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.current { color: var(--text); border-bottom-color: var(--accent); }
+
+@media (max-width: 40rem) {
+  .nav-name { display: none; }
+  .nav-links { justify-content: flex-start; }
+}
+
+/* ---------- layout ---------- */
+
+main { max-width: var(--measure); margin: 0 auto; padding: 0 var(--gutter); }
+
+section { padding: 2.6rem 0; border-top: 1px solid var(--rule); }
+
+h2 {
+  font-family: var(--sans);
+  font-size: .78rem; font-weight: 650; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 1.4rem;
+}
+h3.sub {
+  font-family: var(--sans);
+  font-size: .74rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 2.1rem 0 .9rem;
+}
+h3.sub:first-of-type { margin-top: 0; }
+
+p { margin: 0 0 1.05rem; }
+p:last-child { margin-bottom: 0; }
+
+/* ---------- masthead ---------- */
+
+.masthead { padding: clamp(2.75rem, 9vw, 4.75rem) 0 2.6rem; }
+
+.masthead-grid {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: clamp(1.25rem, 4vw, 2.5rem); align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(2.1rem, 6vw, 2.75rem); line-height: 1.1; letter-spacing: -.01em;
+  margin: 0 0 .7rem;
+}
+
+.role { margin: 0 0 .9rem; font-size: 1.08rem; }
+.role .org { color: var(--text-muted); }
+.tagline { color: var(--text-muted); margin: 0; max-width: 34rem; }
+.tagline b { color: var(--text); font-weight: 600; }
+
+/* Monogram stands in for a portrait. To use a photo, replace the <div class="portrait">
+   with <img class="portrait" src="assets/profile.jpg" alt="Portrait of Junyu Liu">. */
+.portrait {
+  width: clamp(6.5rem, 15vw, 8.75rem); aspect-ratio: 1; height: auto;
+  border-radius: 50%; object-fit: cover;
+  border: 1px solid var(--rule-strong);
+}
+div.portrait {
+  display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent);
+  font-family: var(--serif); font-size: clamp(2rem, 5vw, 2.6rem); letter-spacing: .04em;
+}
+
+.contact {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  font-family: var(--sans); font-size: .82rem;
+}
+.contact a {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .32rem .75rem; border: 1px solid var(--rule-strong); border-radius: 999px;
+  color: var(--text); text-decoration: none;
+}
+.contact a:hover { border-color: var(--accent); color: var(--accent); }
+.contact svg { width: .95rem; height: .95rem; fill: currentColor; flex: none; }
+
+/* ---------- news ---------- */
+
+.news { list-style: none; margin: 0; padding: 0; }
+.news li {
+  display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem;
+  padding: .45rem 0;
+}
+.news time, .dates {
+  font-family: var(--sans); font-size: .8rem; color: var(--text-faint);
+  font-variant-numeric: tabular-nums; padding-top: .2rem; white-space: nowrap;
+}
+.news .tag {
+  font-family: var(--sans); font-size: .7rem; font-weight: 650; letter-spacing: .04em;
+  color: var(--accent); background: var(--accent-soft);
+  padding: .08rem .4rem; border-radius: 3px; margin-right: .35rem; vertical-align: .1em;
+}
+
+/* ---------- publications ---------- */
+
+.pub-note { font-family: var(--sans); font-size: .82rem; color: var(--text-muted); margin-bottom: 1.6rem; }
+
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub { padding: .7rem 0 .75rem; border-bottom: 1px solid var(--rule); }
+.pub:last-child { border-bottom: none; }
+.pub-title { font-weight: 600; line-height: 1.38; margin-bottom: .2rem; }
+.pub-title a { color: var(--text); text-decoration: none; }
+.pub-title a:hover { color: var(--accent); text-decoration: underline; }
+.pub-authors { font-size: .95rem; color: var(--text-muted); line-height: 1.45; }
+.pub-authors .me { color: var(--text); font-weight: 600; }
+.pub-venue {
+  margin-top: .35rem;
+  font-family: var(--sans); font-size: .8rem; color: var(--text-muted);
+  display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem;
+}
+.venue {
+  font-weight: 650; letter-spacing: .02em; color: var(--accent);
+  background: var(--accent-soft); padding: .1rem .45rem; border-radius: 3px;
+}
+.pub-venue a { color: var(--text-muted); }
+.pub-venue a:hover { color: var(--accent); }
+
+/* ---------- experience / education ---------- */
+
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline > li {
+  display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem;
+  padding: .75rem 0;
+}
+.timeline h3 { font-size: 1.02rem; font-weight: 600; margin: 0; line-height: 1.4; }
+.timeline .org { color: var(--text-muted); font-weight: 400; }
+.timeline ul { margin: .35rem 0 0; padding-left: 1.1rem; color: var(--text-muted); font-size: .97rem; }
+.timeline ul li { margin: .15rem 0; }
+.timeline ul li::marker { color: var(--rule-strong); }
+.timeline .note { font-size: .95rem; color: var(--text-muted); margin-top: .15rem; }
+
+@media (max-width: 34rem) {
+  .news li, .timeline > li { grid-template-columns: 1fr; gap: .1rem; }
+  .masthead-grid { grid-template-columns: 1fr; }
+  .portrait { grid-row: 1; width: 5.5rem; }
+}
+
+/* ---------- skills ---------- */
+
+.facts { display: grid; grid-template-columns: 9rem 1fr; gap: .55rem 1rem; margin: 0; }
+.facts dt { font-family: var(--sans); font-size: .8rem; font-weight: 650; color: var(--text-muted); padding-top: .2rem; }
+.facts dd { margin: 0; }
+@media (max-width: 34rem) {
+  .facts { grid-template-columns: 1fr; gap: 0; }
+  .facts dd { margin-bottom: .7rem; }
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  max-width: var(--measure); margin: 0 auto;
+  padding: 2rem var(--gutter) 3rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: .78rem; color: var(--text-faint);
+}
+footer p { margin: 0; }
