@@ -138,8 +138,7 @@ h1 {
 .tagline { color: var(--text-muted); margin: 0; max-width: 34rem; }
 .tagline b { color: var(--text); font-weight: 600; }
 
-/* Monogram stands in for a portrait. To use a photo, replace the <div class="portrait">
-   with <img class="portrait" src="assets/profile.jpg" alt="Portrait of Junyu Liu">. */
+/* Portrait photo. The div.portrait rule below is a monogram fallback if the photo is removed. */
 .portrait {
   width: clamp(6.5rem, 15vw, 8.75rem); aspect-ratio: 1; height: auto;
   border-radius: 50%; object-fit: cover;
